@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="theme-color" content="#0a0a0f"/>
+<title>Privacy Policy — JEETrack</title>
+<meta name="description" content="JEETrack's Privacy Policy — what data we collect, how it's used, who we share it with, and how to control or delete it."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.jeetrack.in/privacy"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.jeetrack.in/privacy"/>
+<meta property="og:title" content="Privacy Policy — JEETrack"/>
+<meta property="og:description" content="What data JEETrack collects, how it's used, and how to control or delete it."/>
+<meta property="og:image" content="https://www.jeetrack.in/icon-512.png"/>
+<meta property="og:site_name" content="JEETrack"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png"/>
+<link rel="apple-touch-icon" href="/icon-192.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #181820;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.12);
+    --purple: #7c6af7;
+    --purple-light: #a695ff;
+    --green: #34d399;
+    --amber: #fbbf24;
+    --rose: #f472b6;
+    --text: #e8e8f0;
+    --muted: #7a7990;
+    --muted2: #4a4960;
+    --font-head: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 60px;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-head);
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-logo-text { color: #fff; }
+  .nav-logo-track { background: linear-gradient(135deg,#a29bfe,#fd79a8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  @media (max-width: 640px) {
+    .nav-cta-desktop { display: none !important; }
+  }
+  .nav-cta {
+    background: linear-gradient(135deg, var(--purple), var(--purple-light));
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 1.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse at center, rgba(124,106,247,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(124,106,247,0.12);
+    border: 1px solid rgba(124,106,247,0.25);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--purple-light);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .hero-badge-dot {
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+  .hero h1 {
+    font-family: var(--font-head);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+  .hero h1 em { background: linear-gradient(135deg, #a29bfe, #fd79a8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-style: normal; }
+  .hero p {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .hero .updated {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+    color: var(--muted2);
+  }
+
+  
+  .doc-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    min-width: 0;
+  }
+  @media (max-width: 800px) {
+    .doc-wrap { grid-template-columns: 1fr; }
+    .toc { display: none; }
+  }
+
+  
+  .toc {
+    position: sticky;
+    top: 84px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.1rem 1rem;
+  }
+  .toc-title {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.7rem;
+  }
+  .toc a {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 0.32rem 0;
+    border-left: 2px solid transparent;
+    padding-left: 0.6rem;
+    margin-left: -0.6rem;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .toc a:hover { color: var(--text); border-color: var(--purple-light); }
+
+  
+  .doc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.2rem clamp(1.3rem, 4vw, 2.5rem);
+    min-width: 0;
+    overflow: hidden;
+  }
+  .doc-summary {
+    background: rgba(124,106,247,0.08);
+    border: 1px solid rgba(124,106,247,0.22);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 0.88rem;
+    color: var(--text);
+  }
+  .doc-summary strong { color: var(--purple-light); font-family: var(--font-head); }
+  .doc-summary ul { margin: 0.5rem 0 0 1.1rem; color: var(--muted); }
+  .doc-summary li { margin-bottom: 0.25rem; }
+
+  .doc section { margin-bottom: 2.1rem; }
+  .doc section:last-child { margin-bottom: 0; }
+  .doc h2 {
+    font-family: var(--font-head);
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    scroll-margin-top: 80px;
+  }
+  .doc h2 .num {
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--purple-light);
+    background: rgba(124,106,247,0.14);
+    border-radius: 6px;
+    width: 22px; height: 22px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .doc h3 {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 1.1rem 0 0.5rem;
+  }
+  .doc p {
+    color: var(--muted);
+    font-size: 0.91rem;
+    margin-bottom: 0.7rem;
+  }
+  .doc p strong, .doc li strong { color: var(--text); font-weight: 600; }
+  .doc ul, .doc ol {
+    color: var(--muted);
+    font-size: 0.91rem;
+    margin: 0.5rem 0 0.7rem 1.2rem;
+  }
+  .doc li { margin-bottom: 0.4rem; }
+  .doc a { color: var(--purple-light); text-decoration: none; }
+  .doc a:hover { text-decoration: underline; }
+
+  .table-wrap { overflow-x: auto; margin: 0.8rem 0 1rem; max-width: 100%; }
+  table.dtable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    table-layout: fixed;
+  }
+  table.dtable th, table.dtable td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  @media (min-width: 700px) {
+    table.dtable { min-width: 520px; table-layout: auto; }
+  }
+  table.dtable th {
+    color: var(--purple-light);
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    background: var(--surface2);
+  }
+  table.dtable td { color: var(--muted); }
+  table.dtable td strong { color: var(--text); }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0.6rem 0 0.9rem; }
+  .tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.74rem; font-weight: 600;
+    padding: 4px 10px; border-radius: 99px;
+    border: 1px solid var(--border2);
+    color: var(--muted);
+    background: var(--surface2);
+  }
+  .tag.green { color: var(--green); border-color: rgba(52,211,153,.3); background: rgba(52,211,153,.08); }
+  .tag.amber { color: var(--amber); border-color: rgba(251,191,36,.3); background: rgba(251,191,36,.08); }
+  .tag.purple { color: var(--purple-light); border-color: rgba(124,106,247,.3); background: rgba(124,106,247,.08); }
+  .tag.rose { color: var(--rose); border-color: rgba(244,114,182,.3); background: rgba(244,114,182,.08); }
+
+  .callout {
+    border-left: 3px solid var(--purple);
+    background: rgba(124,106,247,0.06);
+    border-radius: 0 10px 10px 0;
+    padding: 0.85rem 1.1rem;
+    margin: 0.9rem 0;
+    font-size: 0.87rem;
+  }
+  .callout.amber { border-left-color: var(--amber); background: rgba(251,191,36,0.06); }
+  .callout p { margin-bottom: 0; color: var(--text); }
+
+  .doc hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  .contact-box {
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    margin-top: 0.8rem;
+  }
+  .contact-box a { font-weight: 600; }
+
+  
+  .cta-section {
+    text-align: center;
+    padding: 3rem 1.5rem 4rem;
+    border-top: 1px solid var(--border);
+  }
+  .cta-section h2 {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+  .cta-section p {
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--purple), var(--purple-light));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .cta-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--purple-light); text-decoration: none; }
+  footer .footer-links a { margin: 0 0.3rem; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://www.jeetrack.in" class="nav-logo">
+    <span class="nav-logo-text">JEE<span class="nav-logo-track">Track</span></span>
+  </a>
+  <a href="https://www.jeetrack.in" class="nav-cta nav-cta-desktop">Get Started Free →</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge"><span class="hero-badge-dot"></span>Legal</div>
+  <h1>Privacy <em>Policy</em></h1>
+  <p>What we collect, why we collect it, who we share it with, and how you can control or delete it.</p>
+  <div class="updated">Last updated: August 9, 2026</div>
+</section>
+
+<div class="doc-wrap">
+
+<div class="toc">
+    <div class="toc-title">On this page</div>
+    <a href="#overview">Overview</a>
+    <a href="#collect">What we collect</a>
+    <a href="#use">How we use data</a>
+    <a href="#analytics">Analytics & session replay</a>
+    <a href="#ai">AI Insights</a>
+    <a href="#sharing">Third-party providers</a>
+    <a href="#security">Storage, security & retention</a>
+    <a href="#rights">Your rights & deletion</a>
+    <a href="#minors">Children & minors</a>
+    <a href="#cookies">Cookies, notifications & changes</a>
+    <a href="#contact">Contact us</a>
+  </div>
+
+  <article class="doc">
+    <div class="doc-summary">
+      <strong>The short version:</strong>
+      <ul>
+        <li>We collect the account, profile, study, and technical information needed to run JEETrack.</li>
+        <li>We use <strong>PostHog</strong> for product analytics and session replay to understand bugs and product usage.</li>
+        <li><strong>Razorpay</strong> processes optional support contributions. Payment details are handled through Razorpay rather than stored by JEETrack.</li>
+        <li>We don't sell your personal data or use it for third-party advertising.</li>
+        <li>You can export or request deletion of your JEETrack data at any time, subject to limited legal, backup, or provider retention.</li>
+      </ul>
+    </div>
+
+    <section id="overview">
+      <h2><span class="num">1</span>Overview</h2>
+      <p>JEETrack is a study-tracking web app and Progressive Web App for JEE aspirants in India, available at <a href="https://www.jeetrack.in">www.jeetrack.in</a>. It is built and operated by an individual developer, not a registered company.</p>
+      <p>This Privacy Policy explains what we collect, why we use it, which providers process it, and the choices available to you.</p>
+    </section>
+
+    <section id="collect">
+      <h2><span class="num">2</span>What we collect</h2>
+      <h3>Account & profile information</h3>
+      <ul>
+        <li>Email address and account credentials through Supabase Authentication</li>
+        <li>Name and profile picture when provided through Google Sign-In</li>
+        <li>Display name, avatar, academic year, target JEE year, study mode, and coaching information you choose to provide</li>
+      </ul>
+      <h3>Study data</h3>
+      <ul>
+        <li>Mock test scores, subject breakdowns, dates, and notes</li>
+        <li>Study hours and timer sessions</li>
+        <li>Syllabus progress</li>
+        <li>To-do and backlog items, goals, and feedback you send us</li>
+      </ul>
+      <h3>Technical & usage data</h3>
+      <p>We and our providers may process information such as browser/device information, IP address, timestamps, pages or features used, interaction events, and session activity. This helps us operate, secure, debug, and improve JEETrack.</p>
+      <p>We do not intentionally ask JEETrack users for government ID numbers, precise GPS location, or full payment credentials for the app itself.</p>
+    </section>
+
+    <section id="use">
+      <h2><span class="num">3</span>How we use data</h2>
+      <ul>
+        <li>Create and secure accounts and sync your study data</li>
+        <li>Generate dashboards, charts, streaks, reports, and other app features</li>
+        <li>Generate AI Insights when you request them</li>
+        <li>Send transactional emails and optional reminders or monthly reports</li>
+        <li>Understand feature usage, diagnose bugs, improve performance, and decide what to build</li>
+        <li>Process and support optional contributions to JEETrack</li>
+        <li>Respond to support requests and comply with legal obligations</li>
+      </ul>
+      <p>We do <strong>not sell your personal data</strong> and JEETrack does not run third-party advertising.</p>
+    </section>
+
+    <section id="analytics">
+      <h2><span class="num">4</span>Analytics & session replay</h2>
+      <p>JEETrack uses <strong>PostHog</strong> for product analytics and session replay. This helps us understand how features are used, reproduce bugs, identify confusing interactions, and improve the Service. PostHog provides product analytics and session replay as part of its platform. See <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's Privacy Policy</a> for its own processing practices.</p>
+      <p>Depending on how the Service is configured, PostHog may receive information such as interaction events, page or feature usage, browser/device information, timestamps, and session recordings of interactions with the app. Session replay can capture visual and interaction activity during a session. We configure tracking to support product improvement and should not intentionally send passwords or payment credentials as analytics data.</p>
+      <div class="callout amber">
+        <p><strong>Session recordings are not the same as screen access.</strong> They record interactions with JEETrack through the web app; they do not give JEETrack access to unrelated activity elsewhere on your device.</p>
+      </div>
+      <p>PostHog may use cookies, local storage, or similar technologies to provide its analytics features. Its processing is also governed by PostHog's own privacy and contractual terms.</p>
+    </section>
+
+    <section id="ai">
+      <h2><span class="num">5</span>AI Insights</h2>
+      <p>When you request AI Insights, JEETrack sends a summary of relevant academic data, such as scores, study hours, syllabus progress, and backlog information, through our backend to <strong><a href="https://groq.com" target="_blank" rel="noopener">Groq</a></strong> so it can generate the requested analysis.</p>
+      <p>The request is designed to include the information needed for the analysis rather than your account credentials. AI Insights are generated only when you request them, not continuously in the background.</p>
+      <p>Groq's handling of API data is governed by its own policies and terms. Please review its privacy documentation for details about its processing.</p>
+    </section>
+
+    <section id="sharing">
+      <h2><span class="num">6</span>Third-party providers</h2>
+      <p>We do not sell or rent your personal information. We share information with providers only as needed to operate JEETrack:</p>
+      <div class="table-wrap">
+        <table class="dtable">
+          <tr><th>Provider</th><th>Purpose</th><th>Typical data involved</th></tr>
+          <tr><td><strong>Supabase</strong></td><td>Authentication, database and backend</td><td>Account, profile and study data</td></tr>
+          <tr><td><strong>Google</strong></td><td>Optional Google Sign-In</td><td>Name, email and profile picture</td></tr>
+          <tr><td><strong>Groq</strong></td><td>AI Insights</td><td>Academic data needed for the requested insight</td></tr>
+          <tr><td><strong>Resend</strong></td><td>Transactional and report emails</td><td>Email address and email/report content</td></tr>
+          <tr><td><strong>Vercel</strong></td><td>Hosting</td><td>Standard web request and technical data</td></tr>
+          <tr><td><strong>PostHog</strong></td><td>Product analytics and session replay</td><td>Usage events, technical data and session interactions</td></tr>
+          <tr><td><strong>Razorpay</strong></td><td>Optional support contributions</td><td>Payment and transaction information, plus details you provide during checkout</td></tr>
+        </table>
+      </div>
+      <p>Razorpay's <a href="https://razorpay.com/buyer-privacy-notice/" target="_blank" rel="noopener">Buyer Privacy Notice</a> explains that payment processing may involve personal identifiers, transaction/payment data, and device or technical data, and that information may be shared with financial institutions, service providers, affiliates, or regulators where necessary.</p>
+      <p>We may also disclose information when required by law, legal process, or to protect the rights, safety, and security of JEETrack or others.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">7</span>Storage, security & retention</h2>
+      <p>Your account and study data are stored through Supabase. Row Level Security is used to restrict database access, and communications with our backend use HTTPS. JEETrack may also store cached or local copies of app data in your browser for performance and offline-friendly behavior.</p>
+      <p>We use reasonable security measures, but no internet service can guarantee absolute security.</p>
+      <p>We generally retain account and study data while your account is active. After deletion, some information may remain temporarily in backups, logs, fraud-prevention records, or provider systems where necessary for security, legal, accounting, or regulatory reasons, after which it is deleted or otherwise handled according to applicable retention requirements.</p>
+    </section>
+
+    <section id="rights">
+      <h2><span class="num">8</span>Your rights & deletion</h2>
+      <p>You can access, correct, export, and delete your JEETrack data through available account controls, or contact us for help.</p>
+      <ul>
+        <li><strong>Export:</strong> Use <em>Settings → Data &amp; Backup</em> to export available backups/reports.</li>
+        <li><strong>Delete data:</strong> Use <em>Settings → Data &amp; Backup → Reset All Data</em> where available.</li>
+        <li><strong>Delete your account:</strong> Contact <a href="mailto:support@jeetrack.in">support@jeetrack.in</a>.</li>
+        <li><strong>Notifications:</strong> You can disable optional push notifications and report emails from the relevant settings or browser permissions.</li>
+      </ul>
+      <p>For information processed directly by third-party providers such as PostHog or Razorpay, their own privacy policies and legal retention requirements may also apply.</p>
+    </section>
+
+    <section id="minors">
+      <h2><span class="num">9</span>Children & minors</h2>
+      <p>JEETrack is designed for JEE aspirants, many of whom are under 18. If you are under 18, use JEETrack with the awareness and, where required by applicable law, consent of a parent or legal guardian.</p>
+      <p>We do not knowingly use minors' data for advertising. If a parent or guardian believes a minor has provided personal information and wants it reviewed or deleted, contact <a href="mailto:support@jeetrack.in">support@jeetrack.in</a>.</p>
+    </section>
+
+    <section id="cookies">
+      <h2><span class="num">10</span>Cookies, notifications & changes</h2>
+      <p>JEETrack and its providers may use cookies, local storage, service workers, authentication tokens, or similar technologies for login, caching, analytics, session replay, and notifications. You can control some of these technologies through browser or device settings, although disabling them may affect functionality.</p>
+      <p>We may update this policy when JEETrack or its providers change. Material changes will be reflected by updating the date above and, where appropriate, notifying users in-app.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">11</span>Contact us</h2>
+      <p>For privacy questions, data requests, or concerns:</p>
+      <div class="contact-box">
+        <p style="margin-bottom:0.4rem"><strong>Email:</strong> <a href="mailto:support@jeetrack.in">support@jeetrack.in</a></p>
+        <p style="margin-bottom:0"><strong>GitHub:</strong> <a href="https://github.com/AmanxMishraDev/JEETrack" target="_blank" rel="noopener">github.com/AmanxMishraDev/JEETrack</a></p>
+      </div>
+    </section>
+  </article>
+</div>
+
+<section class="cta-section">
+  <h2>Questions about your data?</h2>
+  <p>Questions about your data? We're here to help.</p>
+  <a href="mailto:support@jeetrack.in" class="cta-btn">Email support@jeetrack.in →</a>
+</section>
+
+<footer>
+  <p>© 2026 JEETrack · <a href="https://www.jeetrack.in">Home</a> · <a href="/faq">FAQ</a> · <a href="/terms">Terms</a> · Built for JEE aspirants across India</p>
+</footer>
+
+</body>
+</html>
